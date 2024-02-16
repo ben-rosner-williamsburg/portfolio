@@ -11,13 +11,13 @@ function Projects() {
         <h1 className="project-text">Article</h1>
       </div>
       </a>
-      <a href={"https://trivia-troll.vercel.app/"}>
+      <a href={"https://rancid-tomatillos-benrosnerwilliamsburg.vercel.app/"}>
       <div className="project">
         <img src={Rancid} alt="A screenshot of an movie info application"/>
         <h1 className="project-text">Rancid Tomatillos</h1>
       </div>
       </a>
-      <a href={"https://rancid-tomatillos-benrosnerwilliamsburg.vercel.app/"}>
+      <a href={"https://trivia-troll.vercel.app"}>
       <div className="project">
         <img src={Trivia} alt="A screenshot of an trivia game application"/>
         <h1 className="project-text">Trivia Troll</h1>
