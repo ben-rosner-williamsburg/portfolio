@@ -1,0 +1,14 @@
+.info-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}
+
+.info-text {
+  justify-content: center;
+  font-family: fantasy;
+  color: black;
+  margin-left: 10vw;
+  font-size: 5.1em;
+}
