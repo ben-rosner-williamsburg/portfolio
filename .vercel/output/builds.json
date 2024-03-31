@@ -19,18 +19,18 @@
       },
       "error": {
         "name": "Error",
-        "stack": "Error: Command \"npm run build\" exited with 1\n    at ChildProcess.<anonymous> (/Users/benrosnerwilliamsburg/.nvm/versions/node/v16.15.1/lib/node_modules/vercel/node_modules/@vercel/build-utils/dist/index.js:21784:9)\n    at ChildProcess.emit (node:events:527:28)\n    at ChildProcess.emit (node:domain:475:12)\n    at maybeClose (node:internal/child_process:1092:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)",
-        "message": "Command \"npm run build\" exited with 1",
+        "stack": "Error: Command \"react-scripts build\" exited with 127\n    at ChildProcess.<anonymous> (/Users/benrosnerwilliamsburg/.nvm/versions/node/v16.15.1/lib/node_modules/vercel/node_modules/@vercel/build-utils/dist/index.js:21801:9)\n    at ChildProcess.emit (node:events:527:28)\n    at ChildProcess.emit (node:domain:475:12)\n    at maybeClose (node:internal/child_process:1092:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)",
+        "message": "Command \"react-scripts build\" exited with 127",
         "hideStackTrace": true,
-        "code": "BUILD_UTILS_SPAWN_1"
+        "code": "BUILD_UTILS_SPAWN_127"
       }
     }
   ],
   "error": {
     "name": "Error",
-    "stack": "Error: Command \"npm run build\" exited with 1\n    at ChildProcess.<anonymous> (/Users/benrosnerwilliamsburg/.nvm/versions/node/v16.15.1/lib/node_modules/vercel/node_modules/@vercel/build-utils/dist/index.js:21784:9)\n    at ChildProcess.emit (node:events:527:28)\n    at ChildProcess.emit (node:domain:475:12)\n    at maybeClose (node:internal/child_process:1092:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)",
-    "message": "Command \"npm run build\" exited with 1",
+    "stack": "Error: Command \"react-scripts build\" exited with 127\n    at ChildProcess.<anonymous> (/Users/benrosnerwilliamsburg/.nvm/versions/node/v16.15.1/lib/node_modules/vercel/node_modules/@vercel/build-utils/dist/index.js:21801:9)\n    at ChildProcess.emit (node:events:527:28)\n    at ChildProcess.emit (node:domain:475:12)\n    at maybeClose (node:internal/child_process:1092:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)",
+    "message": "Command \"react-scripts build\" exited with 127",
     "hideStackTrace": true,
-    "code": "BUILD_UTILS_SPAWN_1"
+    "code": "BUILD_UTILS_SPAWN_127"
   }
 }
