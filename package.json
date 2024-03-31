@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "normalize": "^0.3.1",
+    "vercel": "^33.6.2",
     "webflow": "^0.2.2"
   }
 }
