@@ -1,3 +1,9 @@
+.aguafina-script-regular {
+  font-family: "Aguafina Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 a {
   color: #ddd;
   text-decoration: none;
@@ -7,9 +13,9 @@ a {
   display: block;
   overflow: scroll;
   max-height: 100vh;
-  background-color: #9A031E;
-  font-family: Inter, sans-serif;
+  background-color: #9a031e;
 }
+
 
 .leftcontent {
   display: -webkit-box;
@@ -42,6 +48,7 @@ a {
   line-height: 100%;
   letter-spacing: 1px;
   text-transform: uppercase;
+  font-family: cursive;
 }
 
 .bold-text {
@@ -57,7 +64,6 @@ a {
 
 .bio {
   margin-bottom: 40px;
-  font-family: Lora, sans-serif;
   color: #ddd;
   font-size: 21px;
   line-height: 140%;
@@ -73,15 +79,16 @@ a {
 }
 
 .list {
-  font-family: Roboto, sans-serif;
   color: #ddd;
   font-size: 14px;
   line-height: 160%;
+  font-family: cursive;
 }
 
 .credit {
   color: #ddd;
   font-size: 13px;
+  font-family: cursive;
 }
 
 .rightcontent {
@@ -153,7 +160,7 @@ a {
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
   flex: 0 auto;
-  background-image: url('../images/favicon_io/Domino_Park.jpg');
+  background-image: url("../images/favicon_io/Domino_Park.jpg");
   background-position: 50% 50%;
   background-size: cover;
   -o-object-fit: cover;
@@ -238,4 +245,3 @@ a {
     max-height: 30vh;
   }
 }
-
