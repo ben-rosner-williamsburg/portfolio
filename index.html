@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Ben Rosner's Portfolio</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
+  <meta name="theme-color" content="#1a1a1a">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/portfolio.webflow.css?ver=1.1" rel="stylesheet" type="text/css">
@@ -128,7 +128,7 @@
       color: #888;
       font-size: 0.9rem;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 991px) {
       .hero-section {
         padding: 1rem;
       }
@@ -140,6 +140,66 @@
       }
       .tagline {
         font-size: 2rem;
+      }
+      .bio {
+        font-size: 1.1rem;
+      }
+      .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      }
+      .links {
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .w-col-5 {
+        width: 100% !important;
+        margin-left: 0 !important;
+      }
+    }
+    @media (max-width: 767px) {
+      .hero-section {
+        padding: 0.5rem;
+      }
+      .content {
+        padding: 1.5rem;
+      }
+      .name {
+        font-size: 2rem;
+      }
+      .tagline {
+        font-size: 1.8rem;
+      }
+      .bio {
+        font-size: 1rem;
+      }
+      .skill-item {
+        padding: 0.8rem;
+      }
+    }
+    @media (max-width: 479px) {
+      .hero-section {
+        padding: 0.25rem;
+      }
+      .content {
+        padding: 1rem;
+      }
+      .name {
+        font-size: 1.8rem;
+      }
+      .tagline {
+        font-size: 1.5rem;
+      }
+      .bio {
+        font-size: 0.9rem;
+      }
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .text-block-2 {
+        font-size: 1rem;
+      }
+      .list {
+        font-size: 0.9rem;
       }
     }
   </style>
