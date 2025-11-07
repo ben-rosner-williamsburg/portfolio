@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Ben Rosner's Portfolio</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta name="theme-color" content="#1a1a1a">
+  <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/portfolio.webflow.css?ver=1.1" rel="stylesheet" type="text/css">
@@ -16,252 +16,60 @@
   <link href="images/favicon_ico/favicon-16x16.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/favicon_ico/favicon-16x16.jpg" rel="apple-touch-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap" rel="stylesheet">
 
   <style type="text/css">
-    body {
-      -webkit-font-smoothing: antialiased;
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      background: linear-gradient(135deg, #1a1a1a 0%, #2d3436 25%, #2d3436 75%, #1a1a1a 100%);
-      color: #ffffff;
-    }
-    .hero-section {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding: 2rem;
-    }
-    .content {
-      padding: 3rem;
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(10px);
-      border-radius: 20px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      transition: transform 0.3s ease;
-    }
-    .content:hover {
-      transform: translateY(-5px);
-    }
-    .name {
-      font-size: 3.5rem;
-      margin-bottom: 1rem;
-      font-weight: 600;
-      background: linear-gradient(45deg, #00f2fe, #4facfe);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .tagline {
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-      line-height: 1.2;
-      color: #ffffff;
-    }
-    .bio {
-      font-size: 1.2rem;
-      line-height: 1.6;
-      margin-bottom: 2rem;
-      color: #e0e0e0;
-    }
-    .skills-section {
-      margin: 2rem 0;
-    }
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    .skill-item {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 1rem;
-      border-radius: 12px;
-      text-align: center;
-      transition: all 0.3s ease;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    .skill-item:hover {
-      transform: translateY(-5px);
-      background: rgba(255, 255, 255, 0.15);
-      border-color: rgba(255, 255, 255, 0.2);
-    }
-    .links {
-      margin-top: 2rem;
-    }
-    .text-block-2 {
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      color: #4facfe;
-    }
-    .list li {
-      margin-bottom: 0.8rem;
-    }
-    .list a {
-      color: #e0e0e0;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      position: relative;
-    }
-    .list a:hover {
-      color: #4facfe;
-      padding-left: 5px;
-    }
-    .list a::before {
-      content: '→';
-      position: absolute;
-      left: -15px;
-      opacity: 0;
-      transition: all 0.3s ease;
-    }
-    .list a:hover::before {
-      opacity: 1;
-      left: -10px;
-    }
-    .credit {
-      margin-top: 2rem;
-      text-align: center;
-      color: #888;
-      font-size: 0.9rem;
-    }
-    @media (max-width: 991px) {
-      .hero-section {
-        padding: 1rem;
-      }
-      .content {
-        padding: 2rem;
-      }
-      .name {
-        font-size: 2.5rem;
-      }
-      .tagline {
-        font-size: 2rem;
-      }
-      .bio {
-        font-size: 1.1rem;
-      }
-      .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      }
-      .links {
-        flex-direction: column;
-        gap: 2rem;
-      }
-      .w-col-5 {
-        width: 100% !important;
-        margin-left: 0 !important;
-      }
-    }
-    @media (max-width: 767px) {
-      .hero-section {
-        padding: 0.5rem;
-      }
-      .content {
-        padding: 1.5rem;
-      }
-      .name {
-        font-size: 2rem;
-      }
-      .tagline {
-        font-size: 1.8rem;
-      }
-      .bio {
-        font-size: 1rem;
-      }
-      .skill-item {
-        padding: 0.8rem;
-      }
-    }
-    @media (max-width: 479px) {
-      .hero-section {
-        padding: 0.25rem;
-      }
-      .content {
-        padding: 1rem;
-      }
-      .name {
-        font-size: 1.8rem;
-      }
-      .tagline {
-        font-size: 1.5rem;
-      }
-      .bio {
-        font-size: 0.9rem;
-      }
-      .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .text-block-2 {
-        font-size: 1rem;
-      }
-      .list {
-        font-size: 0.9rem;
-      }
-    }
-  </style>
+body {
+  -webkit-font-smoothing: antialiased;
+}      
+</style>
 </head>
 <body class="body">
-  <div class="hero-section">
-    <div class="columns w-row">
-      <div class="leftcontent w-col w-col-6 w-col-stack">
-        <div data-w-id="b84f5156-c6e2-fb1d-6606-98a08030a472" style="opacity:0" class="image"></div>
-      </div>
-      <div class="rightcontent w-col w-col-6 w-col-stack">
-        <div data-w-id="3fd5aeb3-22da-ed60-7286-0d11f16597d3" style="opacity:0" class="content">
-          <div class="name">Ben Rosner</div>
-          <h1 class="tagline aguafina-script-regular"><strong class="bold-text">Escaper. Adventurer. <br/>Software Engineer.</strong></h1>
-          <p class="bio">I'm a passionate software engineer with a love for creating elegant solutions to complex problems. With a background in front-end development, I specialize in building responsive web applications that deliver exceptional user experiences. When I'm not coding, you can find me exploring new technologies or embarking on escape room adventures.</p>
-          
-          <div class="skills-section">
-            <div class="text-block-2">Skills & Technologies</div>
-            <div class="skills-grid">
-              <div class="skill-item">JavaScript</div>
-              <div class="skill-item">React</div>
-              <div class="skill-item">TypeScript</div>
-              <div class="skill-item">Tailwind CSS</div>
-              <div class="skill-item">Cypress</div>
-              <div class="skill-item">Git</div>
-            </div>
+  <div class="columns w-row">
+    <div class="leftcontent w-col w-col-6 w-col-stack">
+      <div data-w-id="b84f5156-c6e2-fb1d-6606-98a08030a472" style="opacity:0" class="image"></div>
+    </div>
+    <div class="rightcontent w-col w-col-6 w-col-stack">
+      <div data-w-id="3fd5aeb3-22da-ed60-7286-0d11f16597d3" style="opacity:0" class="content">
+        <div class="name">Ben Rosner</div>
+        <h1 class="tagline aguafina-script-regular"><strong class="bold-text">Escaper. Adventurer. <br/>
+Software Engineer.</strong></h1>
+        <p class="bio">Creative Front-End Developer focused on interaction flow, narrative experience, and detail-oriented UI craft.</p>
+        <div class="links w-row">
+          <div class="column w-col w-col-4">
+            <div class="text-block-2">Connect</div>
+            <ul role="list" class="list w-list-unstyled">
+              <li>
+                <a href="http://www.linkedin.com/in/benrosner/">LinkedIn</a>
+              </li>
+              <li>
+                <a href="mailto:ben.rosner.williamsburg@gmail.com">Email</a>
+              </li>
+              <li>
+                <a href="http://www.github.com/ben-rosner-williamsburg">GitHub</a>
+              </li>
+            </ul>
           </div>
-
-          <div class="links w-row">
-            <div class="column w-col w-col-5">
-              <div class="text-block-2">Connect</div>
-              <ul role="list" class="list w-list-unstyled">
-                <li>
-                  <a href="http://www.linkedin.com/in/benrosner/">LinkedIn</a>
-                </li>
-                <li>
-                  <a href="mailto:ben.rosner.williamsburg@gmail.com">Email</a>
-                </li>
-                <li>
-                  <a href="http://www.github.com/ben-rosner-williamsburg">GitHub</a>
-                </li>
-              </ul>
-            </div>
-            <div class="w-col w-col-5" style="margin-left: 20%;">
-              <div class="text-block-2">Work</div>
-              <ul role="list" class="list w-list-unstyled">
-                <li>
-                  <a href="https://rancid-tomatillos-lemon-five.vercel.app/">Rancid Tomatillos</a>
-                </li>   
-                 <li>
-                  <a href="https://trivia-troll.vercel.app/">Trivia Troll</a>
-                </li>    
-                <li>
-                  <a href="https://article-zeta.vercel.app/">Article</a>
-                </li>
-                <li>
-                  <a href="https://asailorslifeforme.org/">A Sailor's Life For Me</a>
-                </li>
-              </ul>
-            </div>
+          <div class="w-col w-col-4">
+            <div class="text-block-2">Work</div>
+            <ul role="list" class="list w-list-unstyled">
+              <li>
+                <a href="https://youtu.be/dWjINU8V57U?si=2z1ZgmZr0nAQ4V3e/">WeatherTogether</a>
+              </li>
+              <li>
+                <a href="https://asailorslifeforme.org/">A Sailor's Life For Me</a>
+              </li>
+              <li>
+                <a href="https://trivia-troll.vercel.app/">Trivia Troll</a>
+              </li>
+              <li>
+                <a href="https://rancid-tomatillos-lemon-five.vercel.app/">Rancid Tomatillos</a>
+              </li>
+            </ul>
           </div>
-          <div class="credit">©2025 Ben Rosner</div>
+        </div>
+        <div class="credit">©2025 Ben Rosner</a>
         </div>
       </div>
     </div>
